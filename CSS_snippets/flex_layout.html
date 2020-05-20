@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flex</title>
+</head>
+<body>
+    <div class="container">
+        <!-- navbar -->
+        <div class="navbar">Navbar</div>
+        <!-- navbar -->
+        <!-- carousel -->
+        <div class="carousel">Carousel</div>
+        <!-- carousel -->
+        <!-- postpage with sidebar -->
+        <div class="container-side">
+             
+            <div class="main-side">Main</div>
+            <div id="sidebar">Side</div>
+        </div>
+        <!-- postpage with sidebar -->
+         <!-- gallery -->
+         <div class="container-gallery">
+             
+            <div class="gallery">Gallery</div>
+            <div class="gallery">Gallery</div>
+            <div class="gallery">Gallery</div>
+            <div class="gallery">Gallery</div>
+
+        </div>
+        <!-- gallery-->
+    </div>
+    <style>
+        body{
+            margin:0px;
+            padding:0px
+        }
+        .container{
+            display:flex;
+            height: 100vh;
+            background-color:darkgray;
+            flex-wrap: nowrap;
+            flex-direction: column;
+        }
+        .navbar{
+            height: 90px;
+            background-color:dimgray;
+            width: 100%;
+            display: block;
+        }
+        .carousel{
+            height: 400px;
+            background-color:skyblue;
+            width: 100%;
+            display: block;
+        }
+        .container-side{
+            display: flex;
+            flex-direction: row;
+            flex-wrap:nowrap;
+            height: 400px;
+            background-color:slategrey
+        }
+        .main-side{
+            width: 80%;
+            background-color: snow;
+        }
+        .sidebar{
+            width: 20%;
+            background-color:teal
+        }
+        .container-gallery{
+            display: flex;
+            
+            flex-flow:row nowrap;
+            height: 400px;
+            background-color:slategrey
+        }
+        .gallery{
+            width: 25%;
+            height: 250px;
+            background-color:thistle;
+            
+        }
+    </style>
+</body>
+</html>
