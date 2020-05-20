@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Health UI</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="main">
+        <div class="col-1">
+            <div class="brand">HealthyLife</div>
+            <div class="recipe-box">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis ex iste possimus fugit, nihil reiciendis a quia consequatur amet est dicta quo qui magnam! Iste deleniti ducimus eveniet sed quibusdam?
+            </div>
+            <div class="recipe-nav-box">
+                <span class="recipe-text-start">Recipe</span>
+                <span class="recipe-text-end"> &rightarrow; </span>
+            </div>
+        </div>
+        <div class="col-2">
+            <div class="menu">
+                <ul class="menu">
+                    <li>About Us</li>
+                    <li>Blog</li>
+                    <li>Contact Us</li>
+                </ul>
+            </div>
+            <div class="control-main">
+                <div class="control-left-arrow"> &leftarrow; </div>
+                <div class="control-right-arrow"> &rightarrow; </div>
+            </div>
+        </div>
+        <div class="col-3">
+            <div class="search-page">Search</div>
+        </div>
+    </div>
+
+    <div class="social-media">F</div>
+
+<style>
+    body{
+        margin:0px;
+        padding: 0;
+    }
+  
+    .main{
+    display: flex;
+    flex-direction: row;
+    }
+    .col-1, .col-2, .col-3{
+        width: 33.3%;
+        height: 100vh;
+    }
+    .col-1{
+        background-color:black;
+    }
+    .col-2{
+        background-color: gray;
+    }
+    .col-3{
+        background-color: goldenrod;
+    }
+      /* column one */
+      .brand{
+        color:#fff;
+        padding:5px 
+    }
+    .recipe-box{
+        background-color: #fff;
+        height: 30vh;
+        width: 33.3%;
+        position: absolute;
+        bottom: 10%;
+        
+    }
+    .recipe-nav-box{
+        background-color:goldenrod;
+        height: 5vh;
+        width: 20%;
+        position: absolute;
+        bottom: 7%;
+        left:8%;
+        transform: translateX(-10%);
+        padding: 10px;
+        display: inline-flex;
+    }
+
+    .recipe-text-start
+    {   
+        /* display: flex; */
+        justify-content: start;
+        align-items: center;
+        width: 50%;
+    }
+    .recipe-text-end{
+        /* display: flex; */
+        width: 50%;
+        justify-content: flex-end;
+        align-items: center;
+
+    }
+    .control-main{
+        background-color: #fff;
+        height: 10vh;
+        width: 15%;
+        position: absolute;
+        bottom: 30%;
+        display: inline-flex;
+    }
+    .control-left-arrow{
+        width: 50%;
+        background-color: goldenrod;
+        height: 10vh;
+    }
+.control-right-arrow{
+        width: 50%;
+        background-color: white;
+        height: 10vh;
+    }
+    .menu{
+        text-align:center;
+        font-size:12px;
+    }
+    ul li{
+       display: inline;
+       color:#fff;
+       padding: 20px;
+      
+    }
+    .search-page{ 
+        display: inline;
+        text-align:right;
+        color:#fff;
+        font-size:12px; 
+        padding:100px;
+    }
+    .social-media{
+        position: fixed;
+        width: 50px;
+        height: 200px;
+        background-color:#fff;
+        top:200px;
+        right:0px;
+    }
+</style>
+
+</body>
+</html>
