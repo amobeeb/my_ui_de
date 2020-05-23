@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid</title>
+</head>
+<body>
+
+    <div class="container">
+        <div class="bx item"><h1>Hello</h1></div>
+        <div class="bx item2"><h1>Hello</h1></div>
+        <div class="bx item3"><h1>Hello</h1></div>
+        <div class="bx item4"><h1>Hello</h1></div>
+    </div>
+
+
+    <style>
+        .container{
+            display:grid;
+            grid-template-columns: 200px 200px 200px;
+            grid-template-rows: 100px;
+            grid-gap: 20px;
+            transition: all 1s;
+        }
+        .bx{
+            
+            background-color: gray;
+        }
+        .item{
+            grid-column: 1 / span 2
+        }
+    </style>
+    
+</body>
+</html>
